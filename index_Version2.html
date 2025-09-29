@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adventurer's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts for a fantasy look -->
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f6f0e6 url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Roboto Slab', serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .scroll {
+            background: rgba(255, 248, 220, 0.95);
+            border: 8px solid #a67c52;
+            border-radius: 30px;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 40px 30px;
+            box-shadow: 0 0 40px #a67c52, 0 0 0 8px #e2c290 inset;
+            position: relative;
+        }
+        .scroll:before, .scroll:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 80%;
+            height: 18px;
+            background: #e2c290;
+            border-radius: 9px;
+            transform: translateX(-50%);
+        }
+        .scroll:before {
+            top: -22px;
+            box-shadow: 0 2px 6px #a67c52;
+        }
+        .scroll:after {
+            bottom: -22px;
+            box-shadow: 0 -2px 6px #a67c52;
+        }
+        h1, h2 {
+            font-family: 'UnifrakturCook', cursive;
+            color: #6d4b1e;
+        }
+        h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            margin-bottom: 0.3em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 1.5em;
+        }
+        p, li {
+            color: #54381e;
+            font-size: 1.1em;
+        }
+        ul {
+            padding-left: 1.5em;
+        }
+        .links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #8b5b17;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px dashed #a67c52;
+            transition: color 0.15s;
+        }
+        .links a:hover {
+            color: #d2691e;
+        }
+        .crest {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 100px;
+            filter: drop-shadow(0 2px 8px #a67c52);
+        }
+        @media (max-width: 600px) {
+            .scroll {
+                padding: 15px 5px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Heraldic_Shield.svg/256px-Heraldic_Shield.svg.png" alt="Crest" class="crest" />
+        <h1>Your Adventurer Name</h1>
+        <p>Welcome, traveler! You have discovered the portfolio of <strong>Your Adventurer Name</strong>, a seeker of code and conjurer of creative works.</p>
+        <h2>About Me</h2>
+        <p>
+            Born under the sign of the [Your Zodiac/Region], I traverse the lands of HTML, CSS, and JavaScript. My quests have led me to craft magical websites, enchanted applications, and mystical digital experiences.
+        </p>
+        <h2>Legendary Projects</h2>
+        <ul>
+            <li><strong>The Enchanted Forest Web App</strong> — A journey through interactive storytelling.</li>
+            <li><strong>Spellbook CMS</strong> — A content management system with arcane features.</li>
+            <li><strong>Potion Inventory Tracker</strong> — Keep track of your magical items.</li>
+        </ul>
+        <h2>Seek Me Out</h2>
+        <p class="links">
+            <a href="mailto:your.email@example.com">🦉 Send an Owl</a>
+            <a href="https://github.com/yourgithubusername">⚔️ GitHub</a>
+            <a href="https://www.linkedin.com/in/yourlinkedin/">🔮 LinkedIn</a>
+        </p>
+    </div>
+</body>
+</html>
